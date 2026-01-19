@@ -1,0 +1,34 @@
+# Ignore Tools_Joe_2 fully
+Tools_Joe_2/
+Tools_Joe_NoAdminRights_NoAzure__FakeAPIviaAzureFunctions/
+Tools_Joe_3/
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# TeamsFx files
+env/.env.*.user
+.DS_Store
+build
+appPackage/build
+.deployment
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# Dev tool directories
+/devTools/
+
+# TypeScript output
+dist
+out
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+local.settings.json
+
+# Local data
+.localConfigs
