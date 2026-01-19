@@ -79,7 +79,7 @@
 {
   "type": "node",
   "request": "launch",
-  "name": "xxJoe22___Node v22 not v24 — Run current file",
+  "name": "Joe22___Node v22 not v24 — Run current file",
   "program": "${file}",
   "runtimeExecutable": "C:\\Dev3\\My Agent____node-v22.22.0-win-x64\\node-v22.22.0-win-x64\\node.exe",
   "console": "integratedTerminal"
@@ -94,7 +94,7 @@
       "type": "node",
       "request": "launch",
       "name": "Joe2__Launch Azure Functions (Portable)",
-      "runtimeExecutable": "${workspaceFolder}/Tools_Joe_3/func_Joe_AzureFunctions_NoWorkersPlaceholder/func.exe",
+      "runtimeExecutable": "${workspaceFolder}/Tools_Joe_2/func_Joe_AzureFunctions_NoWorkersPlaceholder/func.exe",
       "runtimeArgs": [
         "start",
         "--script-root",
@@ -106,7 +106,7 @@
 
 ,
   "env": {    
-    "PATH": "C:/Dev3/My Agent__________node-v18.20.8-win-x64/node-v18.20.8-win-x64;${env:PATH}"
+    "PATH": "C:/Dev3/My Agent____node-v22.22.0-win-x64/node-v22.22.0-win-x64;${env:PATH}"
   }
 
       

@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
-  title: Il Ristorante menu API--------JoeNote__url was http://localhost:7071/api  pre change https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-action-api-plugin-vsc/3-exercise-create-declarative-agent-api-plugin
+  title: Il Ristorante menu API
   version: 1.0.0
   description: API to retrieve dishes and place orders for Il Ristorante.
 servers:
-  - url: ${{OPENAPI_SERVER_URL}}/api
-    description: Il Ristorante API servers url___was http://localhost:7071/api  which is the URL that Azure Functions uses when running locally.  See readme on how azure functions to imitate an api ---and see .vscode/tasks.json for start local tunnel task---------joenote
+  - url: http://localhost:7071/api
+    description: Il Ristorante API server
 paths:
   /dishes:
     get:

@@ -12,17 +12,4 @@
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.*, 5.0.0)"
   }
-
-
-
-,
-  "languageWorkers": {
-    "node": {
-      "arguments": ["--inspect=9229"]
-    }
-  }
-
-
-
-
 }

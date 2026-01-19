@@ -1,7 +1,46 @@
 {
     "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.3/schema.json",
     "version": "v1.3",
-    "name": "Declarative agent",
+    "name": "Declarative agent____Il Ristorante__JoeHmm",
     "description": "Declarative agent created with Teams Toolkit",
     "instructions": "$[file('instruction.txt')]"
+
+
+
+
+    
+
+,
+
+
+
+
+
+"conversation_starters": [
+  {
+    "text": "What's for lunch today?____JOE--dev tunnel and stores its URL in the OPENAPI_SERVER_URL variable--.vscode/tasks.json file"
+  },
+  {
+    "text": "What can I order for dinner that is gluten-free?____JOE--dev tunnel and stores its URL in the OPENAPI_SERVER_URL variable--.vscode/tasks.json file"
+  }
+]
+
+
+
+
+,
+
+
+"actions": [
+  {
+    "id": "menuPlugin",
+    "file": "ai-plugin__JOE.json"
+  }
+]
+
+
+
+
+
 }
+

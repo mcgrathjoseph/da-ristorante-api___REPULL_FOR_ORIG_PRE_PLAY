@@ -10,4 +10,9 @@
     ],
     "azureFunctions.stopFuncTaskPostDebug": false,
     "azureFunctions.showProjectWarning": false,
+    "files.exclude": {
+        "!!!!____________node-v24.12.0-win-x64________________!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!____________________________vs code node path___YAY.png/": true,
+        "Tools_Joe_2/": true,
+        "Tools_Joe_NoAdminRights_NoAzure__FakeAPIviaAzureFunctions/": true
+    },
 }
