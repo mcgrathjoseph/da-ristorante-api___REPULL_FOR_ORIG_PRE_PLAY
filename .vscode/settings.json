@@ -12,6 +12,8 @@
     "azureFunctions.showProjectWarning": false,
     "files.exclude": {
         "!!!!____________node-v24.12.0-win-x64________________!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!____________________________vs code node path___YAY.png/": true,
+        "!!!!!!!!!!!!!!!!!!!!!!!dev4!!!!!.gitconfig!!!!!!!!!!!! GIT!!!!!!!!ROOT OF P!!!! is this used or from a git dos accident (user oicio permission error) pre proper path set to p project.png": true,
+        "!!!!!!!!!!!!!!!!!!!!!!!dev4!!!!!.gitconfig!!!!!!!!!!!! GIT!!!!!!!!ROOT OF P!!!! is this used or from a git dos accident (user oicio permission error) pre proper path set to p project2.png": true,
         "Tools_Joe_2/": true,
         "Tools_Joe_NoAdminRights_NoAzure__FakeAPIviaAzureFunctions/": true
     },

@@ -2,5 +2,59 @@
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "type": "AdaptiveCard",
   "version": "1.5",
-  "body": []
+  "body": [
+
+
+{
+  "type": "Container",
+  "items": [
+    {
+      "type": "Image",
+      "url": "${image_url}",
+      "size": "large"
+    }
+
+
+    ,
+    {
+      "type": "Image",
+      "url": "https://picsum.photos/id/1080/600/400",
+      "size": "large"
+    }
+
+
+    ,
+        {
+          "type": "TextBlock",
+          "text": "${name}",
+          "weight": "Bolder"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${description}",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "Allergens: ${if(count(allergens) > 0, join(allergens, ', '), 'none')}",
+          "weight": "Lighter"
+        },
+        {
+          "type": "TextBlock",
+          "text": "**Price:** €${formatNumber(price, 2)}",
+          "weight": "Lighter",
+          "spacing": "None"
+        }
+
+
+  ]
+}
+
+
+
+
+
+
+
+  ]
 }
