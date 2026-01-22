@@ -1,4 +1,42 @@
+#joe https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-action-api-plugin-vsc/1-introduction
+#joe https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-action-api-plugin-vsc/2-create-declarative-agent-api-plugin
+#joe https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-action-api-plugin-vsc/3-exercise-create-declarative-agent-api-plugin
+
 openapi: 3.0.0
+
+
+
+################################################
+#joe add security https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-api-plugin-auth/3-exercise-integrate-api-plugin-key
+security:
+  - bearerAuth: []
+## hmm above is global .. the repairs project I not do puts it on each paths / not global
+##It automatically applies to all your existing paths (/dishes and /orders).
+##You do not need any per‑path security blocks.
+################################################
+###If you *did* have a `/repairs` endpoint, the structure would look like this:
+###
+###```yaml
+##
+###paths:
+  ###/repairs:
+    ###get:
+      ###security:
+        ###- bearerAuth: []
+      ###summary: Example repairs endpoint
+      ###responses:
+        ###'200':
+          ###description: OK
+##
+#######above is just a demonstration because your Il Ristorante API does not define /repairs, so you do not need this block unless you add that endpoint in the future.
+################################################
+########But you do **not** need to add this.
+########Your global `security:` block already applies to ALL endpoints unless you override it.
+
+
+
+
+
 info:
   title: Il Ristorante menu API--------JoeNote__url was http://localhost:7071/api  pre change https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-action-api-plugin-vsc/3-exercise-create-declarative-agent-api-plugin
   version: 1.0.0
@@ -93,7 +131,32 @@ paths:
         '400':
           description: Invalid order request.
 
+
+
+
 components:
+
+
+################################################
+#joe  Adding bearerAuth in OpenAPI does not enforce authentication.
+#joe  It is metadata, not a gatekeeper.
+#joe  
+#joe  It tells the Copilot agent how to call a secure API
+#joe  It does not modify your Il Ristorante Azure Function backend
+#joe  It does not force authorization unless your Function code checks for it
+#joe  
+#joe  So your existing API endpoints (/dishes, /orders) will continue responding exactly as before.
+
+  #joe add security https://learn.microsoft.com/en-us/training/modules/copilot-declarative-agent-api-plugin-auth/3-exercise-integrate-api-plugin-key
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+################################################
+
+
+
   schemas:
     Dish:
       type: object
