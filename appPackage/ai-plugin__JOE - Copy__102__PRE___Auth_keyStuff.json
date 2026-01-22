@@ -184,11 +184,9 @@
 
     {
   "type": "OpenApi",
-  
-"auth": {
-  "type": "None"
-}
-,
+  "auth": {
+    "type": "None"
+  },
   "spec": {
     "url": "apiSpecificationFile/ristorante.yml"
   },
